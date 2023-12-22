@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/6ac2d3bc6b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
         <figure class="navbar__logo">
             <img src="medias/logo-dark.png" alt="logo-club-de-bordeaux">
         </figure>
@@ -33,7 +33,7 @@
             </li>
         </ul>
         <figure id="navbar__icon-hamburger" class="navbar__icon-hamburger">
-            <i class="fa-solid fa-bars"></i>
+            <i id="navbar__icon-hamburger-item" class="fa-solid fa-bars"></i>
         </figure>
     </nav>
     <section class="firstSection">
@@ -102,13 +102,13 @@
                 Nunc eleifend, sem vitae lobortis iaculis, risus nisi sollicitudin nisi, eu gravida velit nisi nec mi.</p>
         </article>
     </section>
-    <section class="titres-section">
-        <article class="titres-section--titre">
-            <h2 class="titres-section--titre-h2">Reviews</h2>
-            <p class="titres-section--titre-sous-titre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <section class="titres-section-reviews bg-grey">
+        <article class="titres-section-reviews--titre">
+            <h2 class="titres-section-reviews--titre-h2">Reviews</h2>
+            <p class="titres-section-reviews--titre-sous-titre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </article>
     </section>
-    <section class="thirdSection">
+    <section class="thirdSection bg-grey">
         <article class="thirdSection__reviews--grille">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ultricies ex vel mollis. Sed eu aliquet 
                 enim. Nunc eleifend, sem vitae lobortis iaculis, risus nisi sollicitudin nisi, eu gravida velit nisi nec mi.</p>
@@ -167,26 +167,72 @@
         <section class="fifthSection__princing--grille">
             <article class="fifthSection__princing--grille-item">
                 <h5>SINGLE</h5>
-                <h3 class="fifthSection__princing--grille-item-h3">Free</h3>
+                <h3 class="fifthSection__princing--grille-item-h3">FREE</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ultricies ex vel mollis. Sed eu aliquet
                     enim.</p>
                 <ul><button class="fifthSection__princing--grille-item-white-button" href="#">Get Started</button></ul>
             </article>
             <article class="fifthSection__princing--grille-item-bg-white">
-                <h5>SINGLE</h5>
-                <h3 class="fifthSection__princing--grille-item-bg-white-h3">PREMIUM</h3>
+                <h5>PREMIUM</h5>
+                <h3 class="fifthSection__princing--grille-item-bg-white-h3">19$</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ultricies ex vel mollis. Sed eu aliquet
                     enim.</p>
                 <ul><button class="fifthSection__princing--grille-item-purple-button" href="#">Get Started</button></ul>
             </article>
             <article class="fifthSection__princing--grille-item">
-                <h5>SINGLE</h5>
-                <h3 class="fifthSection__princing--grille-item-h3">AGENCY</h3>
+                <h5>AGENCY</h5>
+                <h3 class="fifthSection__princing--grille-item-h3">29$</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ultricies ex vel mollis. Sed eu aliquet
                     enim.</p>
                 <ul><button class="fifthSection__princing--grille-item-white-button" href="#">Get Started</button></ul>
             </article>
         </section>
     </section>
+    <section class="titres-section">
+        <article class="titres-section--titre">
+            <h2 class="titres-section--titre-h2">Download and Install Now</h2>
+        </article>
+    </section>
+    <section class="sixthSection">
+        <section class="sixthSection__appstore">
+            <figure class="sixthSection__appstore-logo">
+                <img src="medias/appstore.png" alt="Logo App Store">
+            </figure>
+            <figure class="sixthSection__appstore-logo">
+                <img src="medias/playstore.png" alt="Logo Google Store">
+            </figure>
+        </section>
+        <figure class="sixthSection__photo-iphone">
+            <img src="medias/iphone-2.png" alt="Photo Iphone">
+        </figure>
+    </section>
+    <section class="seventhSection">
+        <section class="seventhSection__titres-section">
+            <article class="seventhSection__titres-section--titre">
+                <h2 class="seventhSection__titres-section--titre-h2">Subscribe</h2>
+                <p class="seventhSection__titres-section--titre-sous-titre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ultricies ex vel mollis. Sed eu aliquet enim.
+                Nunc eleifend, sem vitae lobortis iaculis.</p>
+            </article>
+        </section>
+        <section class="seventhSection__newsletter">
+            <form class="formulaire" method="post" action="#">
+                <div class="formulaire__item">
+                    <label class="formulaire__item--label" for="email">E-mail Address</label>
+                    <input class="formulaire__item--input" type="email" name="email" placeholder="E-mail address" id="email">
+                </div>
+                <div class="formulaire__item">
+                    <input class="formulaire__item--checkbox" type="checkbox" name="rgpd" id="rgpd"><label class="formulaire__item--labeldisplay" for="sprint">RGPD confirm</label>   
+                </div>
+                <div class="formulaire__item--li-flex-captcha">
+                    <button class="formulaire__item--li-flex-captcha-btn" type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <p class="copyright">@2023 - Cette maquette est la propriété de la <a href="https://3wacademy.fr/" target="_blank">3W Academy</a> - Réalisé avec <i class="fa-solid fa-heart" style="color: #d70909;"></i> par Charlène Delporte</p>
+    </footer>
+<i onclick="scrollToTop()" class="fa-solid fa-arrow-up scrolltotop"></i>
+<script src="js/app.js"></script>
 </body>
 </html>
